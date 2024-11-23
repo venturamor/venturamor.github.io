@@ -150,6 +150,51 @@
       </td>
     </tr>
 
+    <tr onmouseout="diffusion_stop()" onmouseover="diffusion_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='diffusion_lens'><video  width=100% muted autoplay loop>
+          <source src="images/diffusion_lens.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/diffusionLens.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function diffusion_start() {
+            document.getElementById('diffusion_lens').style.opacity = "1";
+          }
+
+          function diffusion_stop() {
+            document.getElementById('diffusion_lens').style.opacity = "0";
+          }
+          diffusion_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://tokeron.github.io/DiffusionLensWeb/">
+          <span class="papertitle">Diffusion Lens: Interpreting Text Encoders in Text-to-Image Pipelines</span>
+        </a>
+        <br>
+        <a href="https://tokeron.github.io/">Michael Toker</a>,
+        <a href="https://orgadhadas.github.io/">Hadas Orgad</a>,
+        <a href="https://venturamor.github.io/"><strong>Mor Ventura</strong></a>,
+        <a href="https://scholar.google.com/citations?user=A363uwwAAAAJ&hl=en">Dana Arad</a>,
+        <a href="https://belinkov.com/">Yonatan Belinkov</a>,
+        <br>
+        <em>ACL</em>, 2024
+        <br>
+        <a href="https://tokeron.github.io/DiffusionLensWeb/">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=hAZr8pjyt-Y&t=506s">video</a>
+        /
+        <a href="https://arxiv.org/abs/2403.05846">arXiv</a>
+        <p></p>
+        <p>
+          Text-to-image diffusion models (T2I) use a latent representation of a text prompt to guide the image generation process. However, the process by which the encoder produces the text representation is unknown. We propose the Diffusion Lens, a method for analyzing the text encoder of T2I models by generating images from its intermediate representations. Using the Diffusion Lens, we perform an extensive analysis of two recent T2I models. Exploring compound prompts, we find that complex scenes describing multiple objects are composed progressively and more slowly compared to simple scenes; Exploring knowledge retrieval, we find that representation of uncommon concepts requires further computation compared to common concepts, and that knowledge retrieval is gradual across layers. Overall, our findings provide valuable insights into the text encoder component in T2I pipelines.
+        </p>
+      </td>
+    </tr>
+
 
           </tbody></table>
 
