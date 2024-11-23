@@ -58,46 +58,43 @@
     <tr onmouseout="nleye_stop()" onmouseover="nleye_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='ever_image'>
-					  <img src='images/ever_after.png' width=100%>
+          <div class="two" id='nleye_image'>
+					  <img src='images/nleye_im.png' width=100%>
 					</div>
-          <img src='images/ever_before.png' width=100%>
+          <img src='images/nleye_im.png' width=100%>
         </div>
         <script type="text/javascript">
           function ever_start() {
-            document.getElementById('ever_image').style.opacity = "1";
+            document.getElementById('nleye_image').style.opacity = "1";
           }
 
           function ever_stop() {
-            document.getElementById('ever_image').style.opacity = "0";
+            document.getElementById('nleye_image').style.opacity = "0";
           }
           ever_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://ever.github.io/">
-			<span class="papertitle">EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis
+			<span class="papertitle">NL-EYE: ABDUCTIVE NLI FOR IMAGES
 </span>
         </a>
         <br>
-				<a href="https://half-potato.gitlab.io/">Alexander Mai</a>, 
-				<a href="https://phogzone.com/">Peter Hedman</a>,
-				<a href="https://grgkopanas.github.io/">George Kopanas</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://scholar.google.com/citations?user=ozNFrecAAAAJ&hl=en">David Futschik</a>,
-        <a href="https://xharlie.github.io/">Qiangeng Xu</a>,
-        <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=253">Falko Kuester</a>,
-				<strong>Jonathan T. Barron</strong>,
-        <a href="https://www.zhangyinda.com/">Yinda Zhang</a>
+				<a href="https://venturamor.github.io//"><strong>Mor Ventura</strong></a>, 
+				<a href="https://tokeron.github.io/">Michael Toker</a>,
+				<a href="https://nitaytech.github.io/">Nitay Calderon</a>,
+        <a href="https://scholar.google.com/citations?user=c748UcIAAAAJ&hl=en">Zorik Gehkman</a>,
+        <a href="https://yonatanbitton.github.io/">Yonatan Bitton</a>,
+        <a href="https://roireichart.com/">Roi Reichart</a>,
 				<br>
         <em>arXiv</em>, 2024
         <br>
-        <a href="https://half-potato.gitlab.io/posts/ever/">project page</a>
+        <a href="https://venturamor.github.io/NLEye/">project page</a>
         /
-        <a href="https://arxiv.org/abs/2410.01804">arXiv</a>
+        <a href="https://arxiv.org/abs/2410.02613">arXiv</a>
         <p></p>
         <p>
-				Raytracing constant-density ellipsoids yields more accurate and flexible radiance fields than splatting Gaussians, and still runs in real-time.
+          Will a Visual Language Model (VLM)-based bot warn us about slipping if it detects a wet floor? Recent VLMs have demonstrated impressive capabilities, yet their ability to infer outcomes and causes remains underexplored. To address this, we introduce NL-Eye, a benchmark designed to assess VLMs' visual abductive reasoning skills. NL-Eye adapts the abductive Natural Language Inference (NLI) task to the visual domain, requiring models to evaluate the plausibility of hypothesis images based on a premise image and explain their decisions. NL-Eye consists of 350 carefully curated triplet examples (1,050 images) spanning diverse reasoning categories: physical, functional, logical, emotional, cultural, and social. The data curation process involved two steps - writing textual descriptions and generating images using text-to-image models, both requiring substantial human involvement to ensure high-quality and challenging scenes. Our experiments show that VLMs struggle significantly on NL-Eye, often performing at random baseline levels, while humans excel in both plausibility prediction and explanation quality. This demonstrates a deficiency in the abductive reasoning capabilities of modern VLMs. NL-Eye represents a crucial step toward developing VLMs capable of robust multimodal reasoning for real-world applications, including accident-prevention bots and generated video verification.
         </p>
       </td>
     </tr>
