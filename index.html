@@ -94,55 +94,50 @@
         <a href="https://arxiv.org/abs/2410.02613">arXiv</a>
         <p></p>
         <p>
-          Will a Visual Language Model (VLM)-based bot warn us about slipping if it detects a wet floor? Recent VLMs have demonstrated impressive capabilities, yet their ability to infer outcomes and causes remains underexplored. To address this, we introduce NL-Eye, a benchmark designed to assess VLMs' visual abductive reasoning skills. NL-Eye adapts the abductive Natural Language Inference (NLI) task to the visual domain, requiring models to evaluate the plausibility of hypothesis images based on a premise image and explain their decisions. NL-Eye consists of 350 carefully curated triplet examples (1,050 images) spanning diverse reasoning categories: physical, functional, logical, emotional, cultural, and social. The data curation process involved two steps - writing textual descriptions and generating images using text-to-image models, both requiring substantial human involvement to ensure high-quality and challenging scenes. Our experiments show that VLMs struggle significantly on NL-Eye, often performing at random baseline levels, while humans excel in both plausibility prediction and explanation quality. This demonstrates a deficiency in the abductive reasoning capabilities of modern VLMs. NL-Eye represents a crucial step toward developing VLMs capable of robust multimodal reasoning for real-world applications, including accident-prevention bots and generated video verification.
+          Will a Visual Language Model (VLM)-based bot warn us about slipping if it detects a wet floor? Recent VLMs have demonstrated impressive capabilities, yet their ability to infer outcomes and causes remains underexplored. To address this, we introduce NL-Eye, a benchmark designed to assess VLMs' visual abductive reasoning skills. NL-Eye adapts the abductive Natural Language Inference (NLI) task to the visual domain, requiring models to evaluate the plausibility of hypothesis images based on a premise image and explain their decisions. 
         </p>
       </td>
     </tr>
 
-    <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()" bgcolor="#ffffd0">
+    <tr onmouseout="cultext2i_stop()" onmouseover="cultext2i_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/cat3d.mp4" type="video/mp4">
+          <div class="two" id='cultext2i'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/cultext2i_city.png" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
-          <img src='images/cat3d.jpg' width="160">
+          <img src='images/cultext2i_city.png' width="160">
         </div>
         <script type="text/javascript">
-          function cat3d_start() {
-            document.getElementById('cat3d_image').style.opacity = "1";
+          function cultext2i_start() {
+            document.getElementById('cultext2i').style.opacity = "1";
           }
 
-          function cat3d_stop() {
-            document.getElementById('cat3d_image').style.opacity = "0";
+          function cultext2i_stop() {
+            document.getElementById('cultext2i').style.opacity = "0";
           }
-          cat3d_stop()
+          cultext2i_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://cat3d.github.io/">
-			<span class="papertitle">CAT3D: Create Anything in 3D with Multi-View Diffusion Models
+        <a href="https://venturamor.github.io/CulText2IWeb/">
+			<span class="papertitle">Navigating Cultural Chasms: Exploring and Unlocking the Cultural POV of Text-To-Image Models
 </span>
         </a>
         <br>
-				<a href="https://ruiqigao.github.io/">Ruiqi Gao</a>*,
-        <a href="https://holynski.org/">Aleksander Holynski</a>*, 
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>, 
-				<a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
-				<strong>Jonathan T. Barron</strong>,
-        <a href="https://poolio.github.io/">Ben Poole</a>*
-
+				<a href="https://venturamor.github.io/"><strong>Mor Ventura</strong></a>*,
+        <a href="https://eyalbd2.github.io/">Eyal Ben David</a>*, 
+        <a href="https://sites.google.com/site/annakorhonen/">Anna Korhonen</a>,
+        <a href="https://roireichart.com/">Roi Reichart</a>, 
         <br>
-        <em>NeurIPS</em>, 2024 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+        <em>TACL</em>, 2024 <font color="red"><strong>(TACL journal | ISCOL 2024 short talk)</strong></font>
         <br>
-        <a href="https://cat3d.github.io/">project page</a>
+        <a href="https://venturamor.github.io/CulText2IWeb/">project page</a>
         /
-        <a href="https://arxiv.org/abs/2405.10314">arXiv</a>
+        <a href="https://arxiv.org/abs/2310.01929">arXiv</a>
         <p></p>
         <p>
-				A single model built around diffusion and NeRF that does text-to-3D, image-to-3D, and few-view reconstruction, trains in 1 minute, and renders at 60FPS in a browser.
+          Text-To-Image (TTI) models, such as DALL-E and StableDiffusion, have demonstrated remarkable prompt-based image generation capabilities. Multilingual encoders may have a substantial impact on the cultural agency of these models, as language is a conduit of culture. In this study, we explore the cultural perception embedded in TTI models by characterizing culture across three hierarchical tiers: cultural dimensions, cultural domains, and cultural concepts. Based on this ontology, we derive prompt templates to unlock the cultural knowledge in TTI models, and propose a comprehensive suite of evaluation techniques, including intrinsic evaluations using the CLIP space, extrinsic evaluations with a Visual-Question-Answer (VQA) model and human assessments, to evaluate the cultural content of TTI-generated images. To bolster our research, we introduce the CulText2I dataset, derived from six diverse TTI models and spanning ten languages. Our experiments provide insights regarding Do, What, Which and How research questions about the nature of cultural encoding in TTI models, paving the way for cross-cultural applications of these models.
         </p>
       </td>
     </tr>
