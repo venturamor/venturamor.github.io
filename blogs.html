@@ -55,21 +55,21 @@
 
         /* Collapsible Styles */
         .collapsible {
-            background-color: #f9f9f9;
-            color: #277f7f; /* Matches theme */
+            background-color: #f9f9f9; /* Light background */
+            color: #333; /* Dark text for contrast */
             cursor: pointer;
             padding: 10px;
             width: 60%;
-            border: 1px solid #309995;
+            border: 1px solid #555; /* Dark grey frame */
             text-align: center; /* Center-align title */
             outline: none;
             font-size: 16px;
             margin: 10px auto;
             border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
         }
         .collapsible:hover {
-            background-color: #e6f7f7;
+            background-color: #e6e6e6; /* Slightly darker hover effect */
         }
         .content {
             display: none;
@@ -77,13 +77,13 @@
             width: 60%;
             padding: 10px;
             text-align: left;
-            border: 1px solid #309995;
+            border: 1px solid #555; /* Matches collapsible border */
             border-radius: 5px;
             background-color: #ffffff;
         }
         img {
             width: 100%;
-            max-width: 300px; /* Smaller image size */
+            max-width: 250px; /* Smaller image size */
             border-radius: 5px;
             margin: 10px auto;
             display: block; /* Centers the image */
