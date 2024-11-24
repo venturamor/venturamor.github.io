@@ -2,54 +2,89 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>Blogs | Mor Ventura</title>
-
+    <title>Blogs and Guides | Mor Ventura</title>
     <meta name="author" content="Mor Ventura">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/rubber_duck_favicon_transparent.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
     <style>
-      /* Navigation Bar Styles */
-      nav {
-          background-color: #309995; /* Adjusted turquoise background */
-          padding: 10px 0;
-      }
-      nav ul {
-          list-style: none;
-          margin: 0;
-          padding: 0;
-          display: flex;
-          justify-content: center;
-      }
-      nav ul li {
-          margin: 0 15px;
-      }
-      nav ul li a {
-          text-decoration: none;
-          color: white;
-          font-size: 18px;
-          font-weight: bold;
-          padding: 5px 10px;
-          transition: background-color 0.3s, color 0.3s;
-      }
-      nav ul li a:hover {
-          background-color: white;
-          color: #48D1CC; /* Hover effect with turquoise text */
-          border-radius: 5px;
-      }
-      /* Center Align Content */
-      body {
-          text-align: center; /* Center-align all text */
-      }
-      h1, h2, p, ul {
-          margin: 20px auto;
-      }
-      ul {
-          display: inline-block; /* Center-align unordered lists */
-          text-align: left; /* Keep list items aligned left for better readability */
-      }
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #277f7f; /* Darker turquoise for a more sophisticated look */
+            padding: 15px 0; /* Slightly increased padding for better spacing */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+            position: sticky; /* Keeps the navbar fixed at the top while scrolling */
+            top: 0;
+            z-index: 1000; /* Ensures it stays above other elements */
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: white;
+            color: #48D1CC; /* Hover effect with turquoise text */
+            border-radius: 5px;
+        }
+        /* Center Align Content */
+        body {
+            text-align: center; /* Center-align all text */
+        }
+        h1, h2, p, ul {
+            margin: 20px auto;
+        }
+        ul {
+            display: inline-block; /* Center-align unordered lists */
+            text-align: left; /* Keep list items aligned left for better readability */
+        }
+        .collapsible {
+            background-color: #309995; /* Turquoise button background */
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 80%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+        .collapsible:hover {
+            background-color: #227f7f; /* Darker turquoise on hover */
+        }
+        .content {
+            display: none; /* Initially hidden */
+            margin: 0 auto;
+            width: 80%;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #309995;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
     </style>
   </head>
 
@@ -64,22 +99,53 @@
     </nav>
 
     <!-- Main Content -->
-    <h1>Blogs</h1>
-    <p>Welcome to my blogs page! Here, I share my thoughts, experiences, and ideas on various topics.</p>
-    
-    <h2>Recent Blog Posts</h2>
-    <ul>
-        <li><a href="#">Blog Post 1: Soon!</a></li>
-    </ul>
+    <h1>Blogs and Guides</h1>
+    <p>Click on the images or buttons below to reveal more content!</p>
 
-    <h2>Guides</h2>
-    <ul>
-        <li>
-            <a href="https://hospitable-antelope-38e.notion.site/Human-Annotation-Amazon-MTurk-Platform-Guide-126d8e06c0c5806b81ced8b3f5a66ea7" target="_blank">
-                Human Annotation: Amazon MTurk Platform Guide
-            </a>
-        </li>
-    </ul>
+    <!-- Guide: Human Annotation - Amazon MTurk Platform -->
+    <button class="collapsible">
+      <img src="path-to-your-image-1.jpg" alt="Human Annotation Guide">
+      Human Annotation - Amazon MTurk Platform Guide
+    </button>
+    <div class="content">
+      <p>
+        This guide provides a step-by-step process for using the Amazon MTurk platform to carry out human annotation tasks.
+        From setting up your requester account and creating annotation guidelines to managing data uploads and ensuring 
+        quality control through qualification tests, this document will help streamline your workflow and optimize your 
+        interaction with workers on the platform.
+      </p>
+      <p>
+        <a href="https://hospitable-antelope-38e.notion.site/Human-Annotation-Amazon-MTurk-Platform-Guide-126d8e06c0c5806b81ced8b3f5a66ea7" target="_blank">
+          Read the full guide here
+        </a>.
+      </p>
+    </div>
 
+    <!-- Blog Post 1 -->
+    <button class="collapsible">
+      <img src="path-to-your-image-2.jpg" alt="Blog Post 1 Image">
+      Blog Post 1: Coming Soon!
+    </button>
+    <div class="content">
+      <p>More details about Blog Post 1 will be available soon. Stay tuned!</p>
+    </div>
+
+    <!-- JavaScript for Collapsible Functionality -->
+    <script>
+      const collapsibles = document.querySelectorAll(".collapsible");
+
+      collapsibles.forEach((collapsible) => {
+        collapsible.addEventListener("click", function () {
+          this.classList.toggle("active");
+          const content = this.nextElementSibling;
+
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      });
+    </script>
   </body>
 </html>
