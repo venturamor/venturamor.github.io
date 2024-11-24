@@ -53,40 +53,40 @@
             text-align: left; /* Keep list items aligned left for better readability */
         }
 
-       /* Collapsible Styles */
+        /* Collapsible Styles */
         .collapsible {
-            background-color: #f9f9f9; /* Regular background color */
-            color: #277f7f; /* Matches the turquoise theme */
+            background-color: #f9f9f9;
+            color: #277f7f; /* Matches theme */
             cursor: pointer;
             padding: 10px;
-            width: 60%; /* Shorter width */
+            width: 60%;
             border: 1px solid #309995;
-            text-align: left;
+            text-align: center; /* Center-align title */
             outline: none;
             font-size: 16px;
             margin: 10px auto;
             border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .collapsible:hover {
-            background-color: #e6f7f7; /* Subtle hover effect */
+            background-color: #e6f7f7;
         }
         .content {
-            display: none; /* Initially hidden */
+            display: none;
             margin: 0 auto;
-            width: 60%; /* Matches the collapsible button width */
+            width: 60%;
             padding: 10px;
             text-align: left;
             border: 1px solid #309995;
             border-radius: 5px;
-            background-color: #ffffff; /* Standard white for content */
+            background-color: #ffffff;
         }
         img {
             width: 100%;
-            max-width: 400px; /* Matches the shorter width */
+            max-width: 300px; /* Smaller image size */
             border-radius: 5px;
-            margin-bottom: 10px;
-            cursor: pointer;
+            margin: 10px auto;
+            display: block; /* Centers the image */
         }
     </style>
   </head>
@@ -126,7 +126,7 @@
 
     <!-- Blog Post 1 -->
     <button class="collapsible">
-      <img src="path-to-your-image-2.jpg" alt="Blog Post 1 Image">
+      <img src="images/crazy_ducks.png" alt="Blog Post 1 Image">
       Blog Post 1: Coming Soon!
     </button>
     <div class="content">
