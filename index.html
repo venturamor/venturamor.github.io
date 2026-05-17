@@ -128,6 +128,42 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+<tr onmouseout="editors_choice_stop()" onmouseover="editors_choice_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='editors_choice_image'>
+            <img src='images/main_example_emotional_seedream_final-1.png' alt="Editor's Choice examples" width=100%>
+          </div>
+          <img src='images/main_example_emotional_seedream_final-1.png' alt="Editor's Choice examples" width=100%>
+        </div>
+        <script type="text/javascript">
+          function editors_choice_start() {
+            document.getElementById('editors_choice_image').style.opacity = "1";
+          }
+
+          function editors_choice_stop() {
+            document.getElementById('editors_choice_image').style.opacity = "0";
+          }
+          editors_choice_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2605.14842">
+          <span class="papertitle">Editor's Choice: Evaluating Abstract Intent in Image Editing through Atomic Entity Analysis</span>
+        </a>
+        <br>
+        <strong>Mor Ventura</strong>, Roy Hirsch, Yonatan Bitton, Regev Cohen, Roi Reichart
+        <br>
+        <em>under submission, arXiv preprint</em>, 2026
+        <br>
+        <a href="https://arxiv.org/abs/2605.14842">arXiv</a>
+        <p></p>
+        <p>
+        Humans naturally communicate through abstract concepts like "mood". However, current image editing benchmarks focus primarily on explicit, literal commands, leaving abstract instructions largely underexplored. In this work, we first formalize the definition and taxonomy of abstract image editing. To measure instruction-following in this challenging domain, we introduce Entity-Rubrics, a framework that breaks down abstract edits into individual, entity-level assessments and achieves strong correlation with human judgment. Alongside this framework, we contribute AbstractEdit, the first benchmark dedicated to abstract image editing across diverse real-world scenes. Evaluating 11 leading models on this dataset reveals a fundamental challenge: standard architectures struggle to balance intent and preservation, commonly defaulting to under-editing or over-editing. Our analysis demonstrates that driving meaningful improvements relies heavily on integrating advanced LLM text encoders and iterative thinking. Looking forward, our entity-based paradigm can generalize beyond assessment to serve as a reward model, enable models to correctly interpret abstract communication, or highlight specific failures in test-time critique loops. Ultimately, we hope this work serves as a stepping stone toward seamless multimodal interaction, closing the gap between rigid machine execution and the natural, open-ended way humans communicate.
+        </p>
+      </td>
+    </tr>
+
 
 <tr onmouseout="multabench_stop()" onmouseover="multabench_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
